@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #ffecf2;
+        }
+
+        h1 {
+            color: #e44d8d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #mensagem {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        button {
+            width: 180px;
+            padding: 15px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            background-color: #e44d8d;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #d14076;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        #resposta {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marcelle Bogea !</h1>
+    <h1>Quer namorar comigo?</h1>
+    
+
+    <button onclick="aceitar()">Sim !</button>
+    <button onclick="recusar()">Não !</button>
+
+    <p id="resposta"></p>
+
+    <script>
+        function aceitar() {
+            document.getElementById("resposta").innerHTML = "Parabéns! 🎉 Agora prepare-se para muitos momentos incríveis juntos!";
+        }
+
+        function recusar() {
+            document.getElementById("resposta").innerHTML = "Resposta errada.";
+        }
+    </script>
+
+</body>
+</html>
